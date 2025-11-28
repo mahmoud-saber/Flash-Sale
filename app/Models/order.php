@@ -16,4 +16,8 @@ class order extends Model
    {
        return $this->belongsTo(Holds::class);
    }
+   public function payments()
+   {
+       return $this->hasMany(Payment::class);
+   }
 }
